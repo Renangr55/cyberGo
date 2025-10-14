@@ -3,16 +3,16 @@ export const missoes = [
     id: 1,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",    
-    descricao: "Pessoal, hoje vai ter prova",    
-    respostaCorreta: "Dorival",
+    descricao: "Responsável pela aula de SO",    
+    respostaCorreta: "Israel",
     status: 'disponivel' 
   },
   {
     id: 2,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "A bola é minha! Essa frase é conhecida por qual professor(a)?",
-    respostaCorreta: "Marcia",
+    descricao: "Primeiro professor de LIMA?",
+    respostaCorreta: "Vitor",
     status: 'disponivel'
   },
   {
@@ -27,16 +27,16 @@ export const missoes = [
     id: 4,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "Hellllowwwww Sextooouuuuuuuu, é a frase favorita de qual professor?",
-    respostaCorreta: "Mariany",
+    descricao: "O que é HTTP?",
+    respostaCorreta: "Protocolo de Comunicação",
     status: 'disponivel'
   },
   {
     id: 5,
     titulo: "Conhecimentos Gerais",
     missao: "Advinha quem eu sou",   
-    descricao: "E agora com vocês .... os patronos do conhecimento... Vocês",
-    respostaCorreta: "Israel",
+    descricao: "Quem é responsável pela categoria de cybersecurity na wordSkils?",
+    respostaCorreta: "Dorival",
     status: 'disponivel'
   }
   ,

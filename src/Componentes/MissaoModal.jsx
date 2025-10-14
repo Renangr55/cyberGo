@@ -1,6 +1,6 @@
 import { useState } from "react";
-import sucesso from "../assets/win.png";
-import erro from "../assets/raios.png";
+import sucesso from "../assets/mandouBem.png";
+import erro from "../assets/over.png";
 
 export function MissaoModal({ missao, onClose, onConcluir }) {
   const [resposta, setResposta] = useState("");
@@ -40,6 +40,7 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
       <label htmlFor="resposta" className="sr-only">
         Digite sua resposta
       </label>
+
       <input
         className="caixaTexto"
         id="resposta"
@@ -50,13 +51,13 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
         required
       />
 
-      <div className="modal-botoes">
+      <section className="modal-botoes">
         <button onClick={verificarResposta}>Enviar</button>
         <button onClick={onClose}>Fechar</button>
-      </div>
+      </section>
 
       {resultado && (
-        <div className="resultado">
+        <div aria-live className="resultado">
           <p>{resultado}</p>
           {status === "sucesso" && (
             <img
@@ -69,7 +70,7 @@ export function MissaoModal({ missao, onClose, onConcluir }) {
             <img
               src={erro}
               alt="Erro na resposta da missão"
-              width="100"
+              width="10px"
             />
           )}
         </div>

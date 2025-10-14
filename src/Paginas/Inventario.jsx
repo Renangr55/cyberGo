@@ -24,8 +24,8 @@ export function Inventario() {
   return (
     <main className="conteiner">
         <section className="inventario">
-      <h2>Inventário</h2>
-      <button className="limpar-inventario" onClick={limparInventario}>
+          <h2>Inventário</h2>
+            <button className="limpar-inventario" onClick={limparInventario}>
             Limpar Inventário
           </button>
 
@@ -34,11 +34,10 @@ export function Inventario() {
         <p className="vazio">Nenhuma figurinha coletada ainda!</p>
       ) : (
         <div className="grid">
-          {figurinhas.map((f) => (
-            <div key={f.id} className="figurinha">
-              <img src={f.imagem} alt={f.nome} />
-             
-            </div>
+          {figurinhas.map((index) => (
+            <figure key={index.id} className="figurinha">
+              <img src={index.imagem} alt={index.nome} />
+            </figure>
           ))}
         </div>
       )}
@@ -46,3 +45,5 @@ export function Inventario() {
     </main>
   );
 }
+
+export default Inventario

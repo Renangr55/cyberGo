@@ -6,6 +6,7 @@ export function Inicial() {
 
   return (
     <main className="inicial">
+      
       <img src={logo} className="logo" alt="logo do hacker"  />
      
       <button onClick={() => navigate('/dsgo')} className='entrar'>

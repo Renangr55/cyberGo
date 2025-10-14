@@ -7,10 +7,10 @@
   padding: 3rem 2rem;
   border-radius: 20px;
   color: #fafafa;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 2rem auto 7rem auto;
   overflow-y: auto;
-  max-height: 80vh;
+  max-height: 55vh;
   /* scroll controlado */
 
   /* scroll estilizado */
@@ -60,6 +60,7 @@
   min-height: 220px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
+  
 }
 
 .missao-card:hover {
@@ -81,4 +82,5 @@
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #6a1b9a;
+  
 }

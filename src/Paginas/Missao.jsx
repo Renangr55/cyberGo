@@ -15,13 +15,13 @@ export function Missao() {
   return (
     <section className='conteiner'>
       <h2>Missões</h2>
-      <div className="missoes-grid">
-        {missoes.map((m) => (
+      <div aria-labelledby="Sessão de cards das missões" className="missoes-grid">
+        {missoes.map((index) => (
           <MissaoCard
-            key={m.id} 
-            missao={m}  
+            key={index.id} 
+            missao={index}  
             onIniciarMissao={setMissaoSelecionada} 
-            concluida={missoesConcluidas.includes(m.id)} 
+            concluida={missoesConcluidas.includes(index.id)} 
           />
         ))}
       </div>
