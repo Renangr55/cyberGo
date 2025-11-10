@@ -24,9 +24,11 @@ export function Menu() {
                 </li>
 
                 <li>
-                    <figure>
-                        <img src={mapa} alt="GeoLocalização" />
-                    </figure>
+                    <Link to="camera">
+                        <figure>
+                            <img src={mapa} alt="GeoLocalização" />
+                        </figure>
+                    /</Link>
                 </li>
 
                 <li>

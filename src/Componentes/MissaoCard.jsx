@@ -1,6 +1,6 @@
 export function MissaoCard({ missao, onIniciarMissao,concluida  }) {
 
-  const inventario = JSON.parse(localStorage('inventario')) || [];
+  const inventario = JSON.parse(localStorage.getItem('inventario')) || [];
   const concluidoLocal = inventario.some((f) => f.id === missao.id)
 
   const isConcluido = concluida != undefined ? concluida : concluidoLocal;
